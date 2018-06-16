@@ -63,14 +63,14 @@
                           </Group>
                           <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButtonpunto" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Botonpunto" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton2" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton5" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton8" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jButtonigual" min="-2" max="-2" attributes="0"/>
+                              <Component id="Igual" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton3" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton6" min="-2" max="-2" attributes="0"/>
                               <Component id="Boton9" min="-2" max="-2" attributes="0"/>
@@ -85,9 +85,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
-                          <Component id="ButtonON" min="-2" max="-2" attributes="0"/>
+                          <Component id="Encendido" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="ButtonOff" min="-2" max="-2" attributes="0"/>
+                          <Component id="Apagado" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -106,8 +106,8 @@
                   <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="ButtonON" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="ButtonOff" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Encendido" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Apagado" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -132,9 +132,9 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonigual" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="Igual" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="Boton0" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="jButtonpunto" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="Botonpunto" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="jButtonsuma" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
@@ -143,10 +143,13 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButtonigual">
+        <Component class="javax.swing.JButton" name="Igual">
           <Properties>
             <Property name="text" type="java.lang.String" value="="/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IgualActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Boton0">
           <Properties>
@@ -156,12 +159,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Boton0ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonpunto">
+        <Component class="javax.swing.JButton" name="Botonpunto">
           <Properties>
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonpuntoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonpuntoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Boton1">
@@ -244,20 +247,20 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Boton7ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="ButtonON">
+        <Component class="javax.swing.JToggleButton" name="Encendido">
           <Properties>
             <Property name="text" type="java.lang.String" value="ac"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonONActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EncendidoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="ButtonOff">
+        <Component class="javax.swing.JToggleButton" name="Apagado">
           <Properties>
             <Property name="text" type="java.lang.String" value="off"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonOffActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ApagadoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonmultiplica">
@@ -296,9 +299,6 @@
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
               </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Texto.setText(Texto.getText());"/>
-              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

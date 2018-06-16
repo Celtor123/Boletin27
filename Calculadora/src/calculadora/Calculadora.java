@@ -1,10 +1,8 @@
 
 package calculadora;
 
-import java.util.ArrayList;
-
 public class Calculadora {
-ArrayList <Integer> a= new ArrayList<>();
+
 public void algo(){
    
 }
